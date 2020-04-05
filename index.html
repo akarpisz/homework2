@@ -6,6 +6,13 @@
     <title>Andrew Karpisz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/style.css">
+    <script>
+        window.onload = function() {
+           var name = prompt("What's your name?");
+           var greeting = "Hey " + name + "!";
+           document.getElementById('output').innerHTML = greeting;
+        };
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -18,20 +25,62 @@
                     <a class="navbar-brand" href="#">Portfolio </a>
                 </div>    
                 <div class="col-md-3">
-                    <a class="navbar-brand" href="#">Contact</a>\
+                    <a class="navbar-brand" href="#">Contact</a>
                 </div>
             </div>
         </div>
       </nav>
-
-    <div class="container">
-        <header id="tophead" class="row">
-            Welcome! I'm glad you're here!
-        </header>
-
-        <
+    
+    
+    <div class="container shadow">
+        <div class="row">
+            <header id="tophead" class="col-md-12">
+                <p id="output"></p>
+                <p>Welcome! I'm glad you're here!</p>
+            </header>
+        <div>
+        <div class="row">
+            <!-- Add your image here-->
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img class="frame" src="https://via.placeholder.com/200" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="card" id="maincard" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Andrew Karpisz</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">*In a Nutshell*</h6>
+                        <div class="row">
+                        <p class="card-text">
+                            <ul>
+                                <li>From NY (Meaning, he's an impatient jerk)</li>
+                                <li>30 years old, married for 3 years to Nicole</li> 
+                                <li>Has a 3-year-old daughter who rarely leaves his side</li>
+                                <li>Loves computers and dogs (mainly because they're not people.)</li>
+                            </ul>
+                        </p>
+                        </div>
+                        <div class="row">
+                            <div class=" col-2 text center">
+                                <a class="btn btn-primary" href="https://facebook.com/TheAndrewAK" target="_blank" role="button">Facebook</a>
+                            </div>
+                            <!--<div class="col-3"></div>-->
+                            <div class="col-2">
+                                <a class="btn btn-primary" href="https://twitter.com/TheAndrewAK" target="_blank" role="button">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <!--Add more shit here-->
+            </div>
+        </div>
     </div>
-        
+
     
 </body>
 </html>
